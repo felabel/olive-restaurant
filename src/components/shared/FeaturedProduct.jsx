@@ -12,7 +12,7 @@ const FeaturedProduct = (props) => {
     return (
         <div className="overflow-hidden items-center rounded-lg bg-card-background shadow-lg h-auto pb-3 lg:pb-8 md:pb-6 ">
           <div className="rounded-lg center mx-auto mt-6 flex items-center w-4/5 h-2/4">
-            <img className ="h-full w-full center rounded-lg text-#fdc762" onClick={() => history.push(`/product/${id}`)} src={burger} alt="spaghetti bolognese" />
+            <img className ="h-full w-full center rounded-lg text-#fdc762" onClick={() => history.push(`/product/${id}`)} src={imageUrl} alt="spaghetti bolognese" />
   
           </div>
           <div className="px-6 py-4 mx-auto h-40 ">
