@@ -2,7 +2,7 @@ import React, { useContext }  from 'react'
 import { withRouter } from 'react-router-dom';
 import { isInCart } from '../../Helpers';
 import { CartContext } from '../context/CartContext';
-import burger from '../../images/burger.jpg'
+// import burger from '../../images/burger.jpg'
 
 
 const FeaturedProduct = (props) => {
