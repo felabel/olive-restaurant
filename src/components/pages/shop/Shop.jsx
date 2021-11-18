@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import Layout from '../../layout';
+import Layout from '../../Layout';
 import FeaturedProduct from '../../shared/FeaturedProduct';
 import { ProductsContext } from '../../../context/ProductsContext';
 
