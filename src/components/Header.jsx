@@ -27,8 +27,10 @@ const Header = () => {
                        
                     
                     </ul>
-                    
-                   <CartIcon />
+                    <div className ="">
+                       <CartIcon /> 
+                    </div>
+                   
                 </div> 
             </nav>
             

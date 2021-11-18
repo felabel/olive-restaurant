@@ -13,7 +13,7 @@ const Banner = ( {history} ) => {
                                 <h1 className="text-2xl sm:text-2xl md:text-2xl xl:text-2xl font-semibold tracking-wider text-olive-orange"><span className="text-gray-100">Welcome to </span>Olive food court</h1>
                                 <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl capitalize font-bold text-gray-200 py-4 tracking-wider">The authentic <br /> restaurant & cafe</h1>
                                 <p className="text-xl md:text-base sm:text-base xl:text-base lg:text-base text-gray-300">Have a taste of all our continental cuisines, that we prepare best to serve you. We deliver right at your doorstep when you make an order. </p>
-                                <a href="!#" className="btn border border-olive-orange text-base px-12 my-10 rounded-none text-gray-200 font-normal" onClick={() => history.push('/shop')}>Order Now</a>
+                                <p className="btn border border-olive-orange text-base px-12 my-10 rounded-none text-gray-200 font-normal" onClick={() => history.push('/shop')}>Order Now</p>
                             </div>
                         </div>
                         <div className=" pic relative hidden sm:hidden md:block lg:block xl:block">
