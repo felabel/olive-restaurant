@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 // import Header from "./Header";
-import Navtest from "./pages/shop/Navtest";
+import Navtest from "./pages/shop/NavTest";
 
 
 const Layout = ({children}) => {
