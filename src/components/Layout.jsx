@@ -1,11 +1,13 @@
 import Footer from "./Footer";
-import Header from "./Header";
+// import Header from "./Header";
+import Navtest from "./pages/shop/Navtest";
 
 
 const Layout = ({children}) => {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
+        <Navtest />
           <main>
             {
               children
