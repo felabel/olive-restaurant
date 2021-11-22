@@ -13,14 +13,17 @@ const Navtest = () => {
     <div>
       <nav className="bg-light-bg font-Poppins  shadow-md ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 logo flex lg:text-3xl text-olive-orange text-olive-orange">
-            <div className="mx-auto flex items-center  w-4/5 justify-between">
+          <div className="flex items-center justify-between h-16 logo flex lg:text-xl text-olive-orange text-olive-orange">
+            <div className="mx-auto flex items-center w-1/2 md:w-4/5  lg:w-4/5 justify-between">
               <div className="flex-shrink-0">
-                <img
+                <Link to='/'>
+                  <img
                   className="h-8 w-8"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                   alt="Workflow"
-                />
+                  />
+                </Link>
+                
               </div>
               <div className="hidden md:block lg:mr-4">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -60,15 +63,15 @@ const Navtest = () => {
                 </div>
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="mx-auto flex md:hidden gap-8">
               
-              <div className =" block">
+              <div className ="-ml-24 mt-2">
                 <CartIcon className="" />
                 </div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="mr-4 sm:mr-8 md:mr-8 lg:mr-8 xl:mr-8 bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="sm:mr-8 md:mr-8 lg:mr-8 xl:mr-8 bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -122,10 +125,10 @@ const Navtest = () => {
         >
           {/* mobile menu for smaller screens */}
           {(ref) => (
-            <div className="md:hidden " id="mobile-menu">
+            <div className="md:hidden index-10 " id="mobile-menu">
               <div ref={ref} className="absolute w-full text-centerh-auto bg-light-bg px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
-                  to="/menu"
+                  to="/shop"
                   className="text-center hover:bg-gray-700 text-white block px-3 py-6 rounded-md text-2xl font-medium"
                 >
                   Menu
@@ -144,10 +147,20 @@ const Navtest = () => {
                 >
                   Contact
                 </Link>
+                <Link
+                  href="/contact"
+                  className="text-center text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-6 rounded-md text-2xl font-medium"
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/contact"
+                  className="text-center text-gray-300 hover:bg-gray-700 hover:text-white block px-3 pt-6 rounded-md text-2xl font-medium"
+                >
+                  Sign Up
+                </Link>
 
-                <div className ="ml-12 block">
-                  <CartIcon className=""/>
-                </div>
+                
               </div>
             </div>
           )}

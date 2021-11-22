@@ -8,7 +8,10 @@ const NotFound = () => {
   }
   return (
     <Layout>
-      <p style={style}>Unfortunately we can't find that page</p>
+      <div className="min-h-screen ">
+        <p style={style}>Unfortunately we can't find that page</p>
+      </div>
+      
     </Layout>
   );
 }

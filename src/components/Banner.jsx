@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 const Banner = ( {history} ) => {
     return (
         <section className="-mt-28 lg:-mt-20 xl:-mt-20 bg-opacity-1 ">
-            <div className=" bg-peaches bg-black overflow-hidden bg-no-repeat bg-cover w-full  h-h-auto sm:h-screen md:h-1/2 lg:h-1/2 xl:h-screen">
+            <div className="rounded-md bg-peaches bg-black overflow-hidden bg-no-repeat bg-cover w-full  h-h-auto sm:h-screen md:h-1/2 lg:h-1/2 xl:h-screen">
                 <div className="overlay w-full h-full bg-light-bg">
                     <div className="grid   md:grid-cols-2 lg:grid-cols-2 w-4/5  gap-8 h-1/2 sm:h-4/5 md:h-4/5 lg:h-4/5  xl:h-4/5 mx-auto pt-40">
                         <div className="text ">

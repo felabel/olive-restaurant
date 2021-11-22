@@ -5,44 +5,47 @@ import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from '../../icons/Index';
 const CartItem = (product) => {
   const { title, imageUrl, price, quantity, increase, decrease, removeProduct } = product;
   return (
-    <div className='flex h-56 w-full text-center border-2 border-#ccc m2 p-2 bg-light-bg justify-between'>
-      <div className='item-image h-18 mx-auto'>
-        <img src={imageUrl} alt='product' className="h-1/2" />
+    <div className='h-auto w-full'>
+      <div className='flex md:flex lg:flex xl:flex h-auto w-full text-center  m2 p-2  justify-around rounded-lg shadow-lg flex-1'>
+        <div className='item-image h-36 md:h-56 lg:h-56 xl-56 w-24 md:w-48 lg:w-48 xl:w-48 '>
+              <img src={imageUrl} alt='product' className="h-full w-full" />
+          </div>
+          <div className='name-price w-22 my-auto text-left'>
+              <h4 className="m-0  font-semibold tracking-wide">{title}</h4>
+              <p className="text-base font-semibold tracking-wide py-2">{`$${price}`}</p>
+          </div>
+          <div className='quantity w-22 my-auto font-semibold tracking-wide'>
+              <p>{` ${quantity}`}</p>
+            </div>
+            <div className='btns-container w-22 my-auto block md:flex xl:flex lg:flex md:gap-4 lg:gap-4 '>
+              <button className="btn-increase px-4 py-2 bg-green-600 rounded-md "
+                onClick={() => increase(product)}
+                
+              >
+                <PlusCircleIcon width='20px' />
+              </button>
+              {
+                quantity === 1 && 
+                <button
+                  onClick={() => removeProduct(product)}
+                  className='btn-trash text-gray-100 px-4 py-2 bg-red-600 rounded-md'
+                >
+                  <TrashIcon width='20px' />
+                </button>
+              }
+              { 
+                quantity > 1 && 
+                <button 
+                onClick={() => decrease(product)}
+                className='btn-decrease text-gray-100 px-4 py-2 bg-olive-orange rounded-md'
+                >
+                  <MinusCircleIcon width='20px' />
+                </button>
+              }
+              
+            </div>
       </div>
-      <div className='name-price w-22'>
-        <h4 className="m-0">{title}</h4>
-        <p className="text-base">{`Price: ${price}`}</p>
-      </div>
-      <div className='quantity'>
-        <p>{`Quantity: ${quantity}`}</p>
-      </div>
-      <div className='btns-container'>
-        <button className="btn-increase btn btn-primary"
-          onClick={() => increase(product)}
-          
-        >
-          <PlusCircleIcon width='20px' />
-        </button>
-        {
-          quantity === 1 && 
-          <button
-            onClick={() => removeProduct(product)}
-            className='btn-trash text-gray-100 bg-red border-2 border-red'
-          >
-            <TrashIcon width='20px' />
-          </button>
-        }
-        { 
-          quantity > 1 && 
-          <button 
-          onClick={() => decrease(product)}
-          className='btn-decrease text-gray-100 bg-red border-2 border-red'
-          >
-            <MinusCircleIcon width='20px' />
-          </button>
-        }
-         
-      </div>
+      
     </div>
   );
 }

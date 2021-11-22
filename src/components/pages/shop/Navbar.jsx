@@ -9,6 +9,7 @@ const Navbar = () => {
         <header className ='bg-light-bg font-Poppins w-full h-auto  shadow-md overflow-hidden '>
             <nav className="container  mx-auto flex items-center   py-4 gap-4 w-4/5">
                 <div className="flex-shrink-0">
+                  
                     <img
                     className="h-8 w-8"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"

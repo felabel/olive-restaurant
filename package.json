@@ -13,6 +13,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@headlessui/react": "^1.4.2",
+    "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
     "history": "^5.1.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",

@@ -1,6 +1,7 @@
 import Banner from "./Banner";
 import Layout from "./Layout";
 import MainSection from "./mainSection/MainSection";
+import Services from "./Services";
 
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
         <Layout>
           <Banner />
           <MainSection />
+          <Services />
         </Layout>
       </>
     );

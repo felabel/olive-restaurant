@@ -13,7 +13,7 @@ const CartPage = () => {
   const cartFuncs = { increase, decrease, removeProduct };
   return (
     <Layout>
-      <>
+      <div className="min-h-screen mt-10">
       <h1 className='text-center'>Cart</h1>
       {
         cartItems.length === 0 
@@ -25,21 +25,29 @@ const CartPage = () => {
         </div>
         :
         <> 
-          <div className='cart-page flex justify-around '>
-            <div className='cart-item-container w-8/12 items-center'>
+        
+          <div className='cart-page flex justify-around  gap-2 flex-wrap'>
+            
+          <div className='cart-item-container w-full sm:w-9/12 md:w-9/12 lg:w-3/5 xl:w-3/5 items-center  '>
+            <div className="bg-gray-300 w-full mx-auto h-16 flex flex-1 justify-around vertical-center  font-semibold tracking-wide rounded-t-lg">
+              <p className="my-auto">image</p><p className="my-auto">Name & Price</p><p className="my-auto">QTY</p> <p className="my-auto">Adjust</p>
+            </div>
+
 
               {
                 cartItems.map(item => <CartItem {...item} key={item.id} {...cartFuncs} />)
               }
 
             </div>
-            
-            <Total itemCount={itemCount} total={total} clearCart={clearCart} />
+            <div className="bg-gray-200 rounded-xl shadow-lg w-80 max-h-64">
+              <Total itemCount={itemCount} total={total} clearCart={clearCart} />
+
+            </div>
 
           </div>
         </>
       } 
-      </>
+      </div>
     </Layout> 
   );
 }
