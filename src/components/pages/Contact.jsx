@@ -4,16 +4,16 @@ import Layout from '../Layout'
 const Contact = () => {
     return (
         <Layout>
-           <div className="wrapper w-full h-auto bg-gray-200">
-               <div className=" w-9/12 shadow-md rounded-md h-full pt-20 mx-auto flex text-xl tracking-wide">
-                   <div className=" h-full w-9/12 p-6"> 
+           <div className="wrapper w-full h-auto ">
+               <div className=" w-9/12 shadow-md rounded-md h-full pt-20 mx-auto block md:flex lg:flex text-xl tracking-wide">
+                   <div className=" h-full w-full lg:w-9/12  md:w-9/12 p-6"> 
                        <h className="text-4xl text-black font-bold my-4">GET IN TOUCH</h>
                        <div>
                             <form className="">
                                 <label htmlFor="">
                                     <p className="my-4">Full Name <span className="text-olive-orange">*</span></p> 
                                 </label>
-                                <input type="text" placeholder="Enter your Name" className="pl-8 w-4/5 h-12 border-none outlinr-none"/>
+                                <input type="text" placeholder="Enter your Name" className="pl-8 w-3/4 h-12 border-none outlinr-none"/>
                                 <label htmlFor="">
                                     <p className="my-4">Message <span className="text-olive-orange">*</span></p> 
                                 </label>

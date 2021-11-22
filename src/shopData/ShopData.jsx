@@ -43,7 +43,7 @@ const SHOP_DATA = [
     },
     {
       id: 7,
-      title: 'Studio Bag Vaqueta',
+      title: 'Studio Bag Vaqueta ',
       description: 'You’re not any one thing, why should your bag be?  ',
       imageUrl: 'https://i.ibb.co/QmGdpLf/studio-bag-vaqueta.jpg',
       price: 75,

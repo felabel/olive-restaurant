@@ -64,7 +64,7 @@ const Footer = () => {
                     </ul>
                     
                 </div>
-                <div className="text-gray-100 ">{year} © OLIVE FOOD COURT </div>
+                <div className="text-gray-100 mt-4 md:mt-0 lg:mt-0">{year} © OLIVE FOOD COURT </div>
                 <div className="flex gap-10 mt-12 md:mt-0">
                         <li className="text-white text-2xl list-none"><FontAwesomeIcon icon={faTwitter} /></li>
                         <li className="text-white text-2xl  list-none"><FontAwesomeIcon icon={faFacebookSquare} /></li>

@@ -28,7 +28,7 @@ const CartPage = () => {
         
           <div className='cart-page flex justify-around  gap-2 flex-wrap'>
             
-          <div className='cart-item-container w-full sm:w-9/12 md:w-9/12 lg:w-3/5 xl:w-3/5 items-center  '>
+          <div className='cart-item-container w-10/12 sm:w-9/12 md:w-9/12 lg:w-3/5 xl:w-3/5 items-center  mt-10 md:mt-0 lg:mt-0 xl:mt-0 '>
             <div className="bg-gray-300 w-full mx-auto h-16 flex flex-1 justify-around vertical-center  font-semibold tracking-wide rounded-t-lg">
               <p className="my-auto">image</p><p className="my-auto">Name & Price</p><p className="my-auto">QTY</p> <p className="my-auto">Adjust</p>
             </div>
