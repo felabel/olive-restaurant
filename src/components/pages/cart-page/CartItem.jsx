@@ -46,14 +46,14 @@ const CartItem = (product) => {
             </div>
             
       </div>
-      <div className="flex">
+      {/* <div className="flex">
 
         <div className="wishlist flex">
           <span>love</span>
           <span className="remove"><TrashIcon width='20px'></TrashIcon></span>
         </div>
         
-      </div>
+      </div> */}
       
       
     </div>
