@@ -37,11 +37,11 @@ const FeaturedProduct = (props) => {
           }
           {
             isInCart(product, cartItems) && 
-            <div className="flex justify-between bg-green md:pb-2 lg:pb-2 pb-10">
+            <div className="flex justify-between bg-green md:pb-2 lg:pb-2 ">
               <div className="add-btns text-2xl text-gray-200 flex justify-between gap-6 px-6">
                 <span onClick={() => increase(product)}>+</span><span onClick={() => decrease(product)}>-</span>
               </div>
-              <button onClick={() => increase(product)} className="btn btn-primary rounded-l-full  rounded-r-none bg-olive-orange">
+              <button onClick={() => increase(product)} className="btn btn-primary rounded-l-full  rounded-r-none bg-olive-orange my-0">
                 Order More
               </button>
 
