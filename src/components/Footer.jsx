@@ -1,15 +1,4 @@
-// import React from 'react';
 
-// const Footer = () => {
-//   const year = new Date().getFullYear();
-//   return(
-//     <div className='footer w-1/2 my-4 mx-auto t-center bottom-0 bg-olive-orange'>
-//       {year} © OLIVE FOOD COURT 
-//     </div>
-//   );
-// }
-
-// export default Footer;
 
 import React from 'react'
 // import logomain from './logomain.svg'

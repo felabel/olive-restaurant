@@ -1,9 +1,18 @@
 import React from 'react'
 import burger from '../images/burger.jpg'
+import { FaBirthdayCake } from 'react-icons/fa'
+// import { GiPartyPopper } from 'react-icons/fa'
+// import { MdNoMealsOuline } from 'react-icons/fa'
+import { FaRegSurprise } from 'react-icons/fa'
+
+
+
+
 
 const Services = () => {
     return (
-        <div className="  w-full  h-auto">
+        // {if(isLoading):}
+        <div className="  w-full  h-auto " id="services">
             <div className="img-bg bg-peaches  overflow-hidden bg-no-repeat bg-cover w-full h-full">
                 <div className="bg-light-bg  h-full ">
                     <div className=" w-5/6 mx-auto py-10 md:py-14 lg:py-16 xl:py-16 text-center tracking-wider text-gray-300 leading-normal">
@@ -13,7 +22,7 @@ const Services = () => {
                             {/* birthday */}
                             <div className=" tracking-wide h-auto ">
                                 <div className=' w-20 h-20 mx-auto  items-center'>
-                                    <img src={burger} alt='birthday parties' className='my-auto'/>
+                                 <span className='h-full w-full text-6xl' size='lg'> <FaBirthdayCake /></span> 
                                 </div>
                                 <p className="title text-xl pb-2">BirthDay Party</p>
                                 <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis fugiat laborum commodi aspernatur ad voluptates!</p>
@@ -23,9 +32,10 @@ const Services = () => {
                             {/* events party */}
                             <div className=" tracking-wide h-auto">
                                 <div className=' w-20 h-20 mx-auto  items-center'>
-                                    <img src={burger} alt='birthday parties' className='my-auto'/>
+                                <span className='h-full w-full text-6xl' size='lg'> <FaBirthdayCake /></span> 
+
                                 </div>
-                                <p className="title text-xl pb-2">BirthDay Party</p>
+                                <p className="title text-xl pb-2">Events</p>
                                 <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis fugiat laborum commodi aspernatur ad voluptates!</p>
                                 <div className="bg-gray-100 h-0.5 w-14 mx-auto mt-5"></div>
                             </div>
@@ -33,7 +43,8 @@ const Services = () => {
                             {/* private reservations */}
                             <div className=" tracking-wide h-auto">
                                 <div className=' w-20 h-20 mx-auto  items-center'>
-                                    <img src={burger} alt='birthday parties' className='my-auto'/>
+                                <span className='h-full w-full text-6xl' size='lg'> <FaBirthdayCake /></span> 
+
                                 </div>
                                 <p className="title text-xl pb-2">Private Reservations</p>
                                 <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis fugiat laborum commodi aspernatur ad voluptates!</p>
@@ -43,7 +54,8 @@ const Services = () => {
                             {/* surprise packages */}
                             <div className=" tracking-wide h-auto">
                                 <div className=' w-20 h-20 mx-auto  items-center'>
-                                    <img src={burger} alt='birthday parties' className='my-auto'/>
+                                    <span className='h-full w-full text-6xl' size='lg'> <FaRegSurprise /></span> 
+
                                 </div>
                                 <p className="title text-xl pb-2">Surprise Parties</p>
                                 <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis fugiat laborum commodi aspernatur ad voluptates!</p>

@@ -1,9 +1,7 @@
 
-
-
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+// import { HashLink as Link } from 'react-router-hash-link';
 import { Transition } from "@headlessui/react";
 import CartIcon from "../../Cart/CartIcon";
 
@@ -34,12 +32,12 @@ const Navtest = () => {
                     Menu
                   </Link>
 
-                  <Link
-                    to='/about'
+                  <a
+                    href='#services'
                     className="text-gray-200 tracking-wider py-2 hover:text-olive-orange text-sm font-medium px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    about
-                  </Link>
+                    Services
+                  </a>
 
                   <Link
                     to='/contact'
@@ -135,20 +133,20 @@ const Navtest = () => {
                 </Link>
 
                 <Link
-                  href="/about"
+                  to="#services"
                   className="text-center text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-6 rounded-md text-2xl font-medium"
                 >
-                  About
+                  Services
                 </Link>
 
                 <Link
-                  href="/contact"
+                  to="/contact"
                   className="text-center text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-6 rounded-md text-2xl font-medium"
                 >
                   Contact
                 </Link>
                 <Link
-                  href="/contact"
+                  to="/contact"
                   className="text-center text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-6 rounded-md text-2xl font-medium"
                 >
                   Login
